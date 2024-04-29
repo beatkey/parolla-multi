@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bgMain:before {
+    content: "";
+    background-image: url("/bg.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: .04;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
